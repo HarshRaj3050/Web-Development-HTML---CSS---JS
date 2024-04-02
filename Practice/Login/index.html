@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: aqua;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .login h1 {
+            text-align: center;
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid silver;
+        }
+
+        form {
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+        form .text_area{
+            position: relative;
+            border-bottom: 2px solid silver;
+            margin: 30px 0;
+        }
+        .text_area input{
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            background: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="login">
+            <h1>Login</h1>
+        </div>
+        <form method="post">
+            <div class="text_area">
+                    <input type="username" placeholder="username" required>
+                    
+            </div>
+            <div class="text_area">
+                <input type="password" placeholder="password" required>
+                <label>Password</label>
+            </div>
+            <div class="forget">
+                <a href="#">Forget password</a>
+            </div>
+            <div class="sumit">
+                <input type="submit" value="Login">
+            </div>
+            <div class="signup">
+                <p>Not a member?</p>
+                <span>
+                    <a href="#">SignUP</a>
+                </span>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>

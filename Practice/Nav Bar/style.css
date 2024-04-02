@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --navBgColor: rgb(43, 255, 209);
+}
+
+.page > ul {
+    list-style: none;
+    display: flex;
+}
+
+.page > ul > li {
+    padding: 20px 40px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    
+
+}
+
+nav{
+    background-color: var(--navBgColor);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page  ul  li:hover {
+    border-radius: 74px;
+background: linear-gradient(145deg, #9efff2, #8affe4);
+box-shadow:  19px 19px 24px #9efff2,
+             -19px -19px 24px #9efff2;
+}
+
