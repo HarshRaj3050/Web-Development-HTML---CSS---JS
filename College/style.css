@@ -1,0 +1,13 @@
+.main {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.title h1 {
+    text-align: center;
+}
+body {
+    display: flex;
+}

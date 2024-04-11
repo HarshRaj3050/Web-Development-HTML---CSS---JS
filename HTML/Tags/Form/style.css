@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    margin: 0 20px;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.container header {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form .input-box input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 8px;
+    outline: none;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender-option {
+    display: flex;
+    gap: 50px;
+}
+
+.gender-box h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
