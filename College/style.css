@@ -1,13 +1,21 @@
-.main {
-    border: 2px solid black;
-    padding: 10px;
-    background-color: bisque;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-.title h1 {
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 body {
+    height: 100%;
+    width: 100%;
+}
+nav ul {
+    padding-top: 20px;
     display: flex;
+    margin-left: 800px;
+    gap: 50px;
+    font-size: 30px;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
