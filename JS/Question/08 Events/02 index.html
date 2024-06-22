@@ -6,21 +6,25 @@
     <title>Event Bubbling</title>
     <style>
         .container{
-            padding: 15px;
-            margin: 15px;
+            padding: 25px;
+            margin: 25px;
             background-color: palevioletred;
+            border: 2px solid black;
         }
         .childContainer{
-            padding: 15px;
-            margin: 15px;
+            padding: 25px;
+            margin: 25px;
             background-color: bisque;
+            border: 2px solid black;
         }
         .child{
-            padding: 15px;
-            margin: 15px;
+            padding: 25px;
+            margin: 25px;
             background-color: aquamarine;
             display: flex;
             justify-content: center;
+            cursor: pointer;
+            border: 2px solid black;
         }
     </style>
 </head>
@@ -30,5 +34,30 @@
             <div class="child">I am Child</div>
         </div>
     </div>
+    <script>
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            alert("Child was click")
+            e.stopPropagation() // use for stop Event Bubbling
+        })
+        document.querySelector(".childContainer").addEventListener("click",()=>{
+            alert("Child Container was click")
+        })
+        document.querySelector(".container").addEventListener("click",()=>{
+            alert("Container was click")
+        })
+
+        function bgColor(){
+            let r,g,b;
+            // Math.floor(Math.random() * (max - min + 1) ) + min;
+            r = Math.floor(Math.random() * (256 - 0 + 1) ) + 0;
+            g = Math.floor(Math.random() * (256 - 0 + 1) ) + 0;
+            b = Math.floor(Math.random() * (256 - 0 + 1) ) + 0;
+            return `rgb(${r},${g},${b})`
+        }
+        
+        setInterval(() => {
+            document.querySelector(".childContainer").style.background = bgColor()
+        }, 1000);
+    </script>
 </body>
 </html>
