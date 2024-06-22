@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">I am box</div>
+        <button id="btn">Button</button>
+    </div>
+    <script>
+        let btn = document.getElementById("btn")
+        btn.addEventListener("click", ()=>{
+            let box = document.querySelector(".box")
+            box.innerHTML = "I am <b>Click</b> Box"
+        })
+        btn.addEventListener("dblclick", ()=>{
+        let box = document.querySelector(".box")
+        box.innerHTML = "I am <b>Dobble Click</b> Box"
+        alert("I was Dobble Click the Button")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Hello World</h2>
+    </div>
+    <script>
+        // Create new Element
+        let newDiv = document.createElement("div"); // create new div
+        newDiv.innerHTML = "I have be inserted <b>by Harsh</b>"; // insert the content
+        newDiv.setAttribute("class", "created"); // create the class, ("class", "className")
+        document.querySelector(".container").append(newDiv); // new div insert into the first container class
+
+
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("beforeend", "<i>Helo I am under the Water</i>");
+        cont.insertAdjacentText("afterend", "I am Text");
+        
+
+        // create class using classList method and its properties
+        document.querySelector(".container").classList.add("box");
+        document.querySelector(".container").classList.add("Animation");
+        document.querySelector(".container").classList.remove("Animation");
+        console.log(document.querySelector(".container").classList);
+        //if you use toggle method, add the class if does't exist, otherwise remove it. 
+        document.querySelector(".container").classList.toggle("Animation");
+        </script>
+</body>
+</html>

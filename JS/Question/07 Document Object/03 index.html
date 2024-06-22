@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            height: 80px;
+            width: 80px;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box" id="box2" style="display: flex; background-color: aquamarine;">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div>
+    <script>
+        // change the Text using of Id
+        let box2 = document.querySelector("#box2")
+        box2.innerText = "Second Box"
+
+
+        let box = document.querySelector(".container")
+        console.log(box.innerHTML)
+        console.log(box.tagName)
+        console.log(box.textContent)
+
+        
+        console.log(document.querySelector("#box2").hasAttribute("style"));
+        console.log(document.querySelector("#box2").getAttribute("style"));
+        document.querySelector("#box2").setAttribute("style", "background-color: aqua;")
+        console.log(document.querySelector("#box2").getAttribute("style"));
+        console.log(document.querySelector("#box2").attributes)
+    </script>
+</body>
+</html>

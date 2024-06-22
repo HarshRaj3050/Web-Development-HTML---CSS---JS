@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        .main {
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            display: flex;
             align-items: center;
+            justify-content: center;
+            margin: 10px;
+            background-color: aquamarine;
         }
     </style>
 </head>
 <body>
-    <div class="main">
-        <img src="img.svg" class="img" alt="">
-        <h1>Prabhu </h1>
-    </div>
-
+    <div class="box" data-createBy="Harsh" data-release="25th May 2024"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <script>
+        let divs = document.querySelectorAll(".box");
+        console.log(divs);
+        let inx = 1;
+        for(div of divs){
+            div.innerText = `Value ${inx}`;
+            inx++;
+        }
+    </script>
 </body>
 </html>

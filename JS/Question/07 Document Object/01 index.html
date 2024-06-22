@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin: 30px;
+            padding: 30px;
+            height: 40px;
+            width: 40px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="containor">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+    </div>
+    <script>
+        document.title = "Introduction" // change the page Title
+        console.log(document.title) // display the page Title
+        console.log(document.body) // display the total body content
+        document.body.style.backgroundColor = "gray" // change the background Color
+
+        let cont = document.body.firstElementChild
+        console.log(cont.childNodes) // display the all the childNodes of 'cont'  
+        console.log(cont.firstChild) // display the first child
+        console.log(cont.firstElementChild) // display the first element child
+        console.log(cont.childNodes[3]) // display the 4th node of 'cont'
+
+        cont.childNodes[3].style.backgroundColor = "pink" // change the background box2
+        let box2 = cont.childNodes[3]
+        console.log(box2.parentElement) // display the box2 parent element
+        console.log(cont.children) // only display the element (not text)
+        console.log(cont.children[3].nextElementSibling) // display the next element sibling
+        console.log(cont.children[2].previousSibling) // display the previous Sibling
+    </script>
+</body>
+</html>

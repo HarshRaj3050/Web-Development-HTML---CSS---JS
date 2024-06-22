@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .container{
+            padding: 15px;
+            margin: 15px;
+            background-color: palevioletred;
+        }
+        .childContainer{
+            padding: 15px;
+            margin: 15px;
+            background-color: bisque;
+        }
+        .child{
+            padding: 15px;
+            margin: 15px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">I am Child</div>
+        </div>
+    </div>
+</body>
+</html>
