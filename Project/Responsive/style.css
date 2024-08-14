@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://img.freepik.com/free-photo/winding-road-cuts-path-through-lush-green-mountains-hazy-sky_91128-4483.jpg?t=st=1720978092~exp=1720981692~hmac=008d3eb04d37d37e89f36dd40d81fabdebe687151b0bdb92d24e31d5d6cabdf5&w=1380);
+    background-size: cover;
+    background-position: 50% 40%;
+    position: relative;
+}
+
+#overlay {
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.549);
+}
+
+#text {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    padding: 0vw 5vw 0vw 10vw;
+    color: #ffff;
+    bottom: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lText {
+    font-size: 4vw;
+}
+
+#rText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    font-size: 14px;
+}
+
+.rText {
+    width: 22%;
+}
+
+.rText :nth-child(1) {
+    height: 30px;
+}
+
+#bottom {
+    width: 100%;
+    min-height: 40vh;
+    background-color: aqua;
+    display: flex;
+}
+
+#icon {
+    font-size: 25px;
+}
+
+#b1 {
+    width: 25%;
+    min-height: inherit;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 30px;
+    position: relative;
+}
+
+#b1 p {
+    margin-top: 10px;
+    font-size: 14px;
+    max-width: 80vw;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 30px;
+}
+
+.ri-arrow-drop-left-line {
+    background-color: rgb(215, 215, 215);
+    border-radius: 50%;
+    font-size: 25px;
+    margin: 3px;
+}
+
+.ri-arrow-drop-right-line {
+    background-color: rgb(215, 215, 215);
+    border-radius: 50%;
+    font-size: 25px;
+    margin: 3px;
+}
+
+#b2 {
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://img.freepik.com/free-photo/photorealistic-view-tree-nature-with-branches-trunk_23-2151478112.jpg?t=st=1721071195~exp=1721074795~hmac=8a7162a534d3db49e5e8b517b663e14a9dea372669f604832e9977c9824fc4ab&w=1060);
+    background-size: cover;
+}
+
+#b3 p {
+    font-size: 1vw
+}
+
+#b3 {
+    width: 20%;
+    min-height: inherit;
+    background-color: rgb(89, 89, 251);
+}
+
+#topB3 {
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(24, 108, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e6e6e6;
+    font-size: 14px;
+}
+
+#bottomB3 {
+    background-image: url(https://img.freepik.com/free-photo/beautiful-mountains-landscape_23-2150787886.jpg?t=st=1721412397~exp=1721415997~hmac=e65649453cd3bea3a5c3cafdbcad427cfe72627e365fcbb7d6870351d4e107c9&w=1060);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 20vh;
+}
+
+
+#b4 {
+    width: 30%;
+    min-height: inherit;
+    background-color: rgb(9, 34, 0);
+    color: rgb(211, 211, 211);
+
+    align-content: center;
+}
+
+#b4 h3 {
+    margin: 0 0 0 4vw;
+    color: #bbbbbb;
+}
+
+.notf {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.photo {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(8, 157, 0);
+    border-radius: 50%;
+    margin: 0 1vw 0 0;
+}
+
+.notf p {
+    width: 60%;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+@media (max-width: 500px) {
+    #text {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #rText {
+        flex-direction: column;
+        align-items: start;
+        font-size: 3vw;
+    }
+
+    .rText {
+        width: initial;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .rText :nth-child(1) {
+        height: initial;
+    }
+
+    #icon {
+        font-size: 16px;
+    }
+
+    #lText h1 {
+        font-size: 34px;
+    }
+
+    #top {
+        min-height: 65vh;
+    }
+
+    #bottom {
+        flex-direction: column;
+        min-height: 35vh;
+    }
+
+    .photo {
+        margin-right: 3vw;
+    }
+
+    #b1 {
+        width: 100%;
+    }
+
+    #b2 {
+        width: 100%;
+    }
+
+    #b3 {
+        width: 100%;
+    }
+
+    #b3 p {
+        font-size: 12px;
+    }
+
+    #b4 {
+        width: 100%;
+    }
+}
