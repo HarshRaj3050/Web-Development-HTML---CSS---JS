@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Nav */
+
+nav {
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    
+}
+
+nav h2 a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    position: relative;
+    padding: 6px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.card-number {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    background-color: red;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* body */
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.details {
+    padding: 15px;
+}
+
+.details p {
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.quntity-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.button {
+    display: flex;
+}
+
+.quntity {
+    padding: 0px 10px;
+}
+
+@media (max-width: 1170px) {
+    .card-list {
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+
+@media (max-width: 970px) {
+    .card-list {
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-list {
+        grid-template-columns: repeat(1, 250px);
+    }
+}

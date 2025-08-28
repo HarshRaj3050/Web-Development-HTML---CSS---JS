@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #C4DAD2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 450px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 40px;
+    background-color: #6A9C89;
+    border-radius: 15px;
+    position: relative;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #16423C;
+    align-self: center;
+    margin-bottom: 20px;
+
+}
+
+.height {
+    margin: 10px 0px;
+    padding-left: 1px;
+}
+
+.weight {
+    margin-bottom: 30px;
+}
+
+
+button {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: linear 0.1s;
+    margin: 0px 8px;
+    margin-bottom: 30px;
+    align-self: center;
+
+
+    &:hover {
+        background-color: #16423C;
+        color: #C4DAD2;
+        transform: scale(1.05);
+    }
+}
+
+h3 {
+    color: #C4DAD2;
+}
+
+.innerPadding {
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.guide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 50px;
+    left: 60px
+}
+
+.guide h2 {
+    align-self: center;
+    margin-right: 15px;
+    color: #16423C;
+}
+
+.guide-list p {
+    background-color: #16423C;
+    color: #C4DAD2;
+    margin: 10px;
+    padding: 5px 40px;
+}
+
+.calculate-Ans {
+    background-color: #11342f;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+
+
